@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean: #051937;
+  --color-deep-blue: #004d7a;
+  --color-cyan: #00bf72;
+  /* Keep a hint of teal/cyan for highlights */
+  --color-accent-blue: #00d2ff;
+  --color-ice-blue: #a8dadc;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Outfit", sans-serif;
+}
+
+:root {
+  --background: #051937;
+  --foreground: #F8F9FA;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+}
+
+.text-glow-deep {
+  text-shadow: 0 0 20px rgba(0, 77, 122, 0.6);
+}
