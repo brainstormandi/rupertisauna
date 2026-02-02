@@ -175,22 +175,32 @@ export default function Features() {
             <div className="max-w-7xl mx-auto">
                 {/* Navigation Switcher */}
                 <div className="flex justify-center mb-24">
-                    <div className="inline-flex bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md">
-                        <button
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="inline-flex bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md relative"
+                    >
+                        <motion.button
                             onClick={() => setActiveTab("sauna")}
-                            className={`px-16 py-6 rounded-full text-lg font-bold uppercase tracking-[0.2em] transition-all ${activeTab === "sauna" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className={`px-16 py-6 rounded-full text-lg font-bold uppercase tracking-[0.2em] transition-colors relative z-10 ${activeTab === "sauna" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
                                 }`}
                         >
                             Saunawelt
-                        </button>
-                        <button
+                        </motion.button>
+                        <motion.button
                             onClick={() => setActiveTab("pool")}
-                            className={`px-16 py-6 rounded-full text-lg font-bold uppercase tracking-[0.2em] transition-all ${activeTab === "pool" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className={`px-16 py-6 rounded-full text-lg font-bold uppercase tracking-[0.2em] transition-colors relative z-10 ${activeTab === "pool" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
                                 }`}
                         >
                             Wasserwelt
-                        </button>
-                    </div>
+                        </motion.button>
+                    </motion.div>
                 </div>
 
                 <AnimatePresence mode="wait">
