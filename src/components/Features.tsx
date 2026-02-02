@@ -186,7 +186,7 @@ export default function Features() {
                             onClick={() => setActiveTab("sauna")}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className={`px-16 py-6 rounded-full text-lg font-bold uppercase tracking-[0.2em] transition-colors relative z-10 ${activeTab === "sauna" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
+                            className={`px-6 py-3 md:px-16 md:py-6 rounded-full text-sm md:text-lg font-bold uppercase tracking-[0.2em] transition-colors relative z-10 ${activeTab === "sauna" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
                                 }`}
                         >
                             Saunawelt
@@ -195,7 +195,7 @@ export default function Features() {
                             onClick={() => setActiveTab("pool")}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className={`px-16 py-6 rounded-full text-lg font-bold uppercase tracking-[0.2em] transition-colors relative z-10 ${activeTab === "pool" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
+                            className={`px-6 py-3 md:px-16 md:py-6 rounded-full text-sm md:text-lg font-bold uppercase tracking-[0.2em] transition-colors relative z-10 ${activeTab === "pool" ? "bg-accent-blue text-ocean shadow-lg shadow-accent-blue/20" : "text-white/60 hover:text-white"
                                 }`}
                         >
                             Wasserwelt
@@ -670,7 +670,7 @@ export default function Features() {
                     <div className="bg-accent-blue p-12 rounded-[40px] flex flex-col justify-between group cursor-pointer hover:bg-white transition-colors duration-500">
                         <Heart className="w-16 h-16 text-ocean group-hover:scale-110 transition-transform mb-12" />
                         <div id="kontakt">
-                            <h3 className="text-ocean font-bold text-4xl mb-6 leading-tight">Geschenkgutscheine</h3>
+                            <h3 className="text-ocean font-bold text-2xl md:text-4xl mb-6 leading-tight break-words">Geschenkgutscheine</h3>
                             <p className="text-ocean/70 text-xl leading-relaxed">
                                 Machen Sie Ihren Liebsten eine Freude mit Wellness-Momenten in der Rupertisauna.
                             </p>
