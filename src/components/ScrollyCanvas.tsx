@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, useMotionValueEvent, motion } from "framer-motion";
 
-const FRAME_COUNT = 63;
+const FRAME_COUNT = 48;
 
 export default function ScrollyCanvas() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -18,7 +18,7 @@ export default function ScrollyCanvas() {
         offset: ["start start", "end end"],
     });
 
-    // Map scroll progress to frame index (1 to 63)
+    // Map scroll progress to frame index (1 to 48)
     const frameIndex = useTransform(scrollYProgress, [0, 1], [1, FRAME_COUNT]);
 
     // Preload Images
@@ -29,8 +29,8 @@ export default function ScrollyCanvas() {
 
         for (let i = 1; i <= totalImages; i++) {
             const img = new Image();
-            // Handle specific file naming: "rupertisauna salzwasser sauna (X).jpg"
-            img.src = `/hero animation/rupertisauna salzwasser sauna (${i}).jpg`;
+            // Handle specific file naming: "rupertisauna wasserwelt saunawelt in laufen (X).jpg"
+            img.src = `/hero animation/rupertisauna wasserwelt saunawelt in laufen (${i}).jpg`;
 
             img.onload = () => {
                 loadedCount++;

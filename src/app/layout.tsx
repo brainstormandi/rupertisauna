@@ -15,7 +15,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.rupertisauna.de'),
   title: {
-    default: "Rupertisauna | Modern Luxury Spa & Sauna",
+    default: "Rupertisauna | Saunawelt & Wasserwelt in Laufen",
     template: "%s | Rupertisauna",
   },
   description: "Erleben Sie modernste Wellness-Technologie und pure Entspannung in unserem exklusiven Spa- und Saunabereich. Entdecken Sie Sauna, Spa und Wellness neu.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Rupertisauna | Modern Luxury Spa & Sauna",
+    title: "Rupertisauna | Saunawelt & Wasserwelt in Laufen",
     description: "Erleben Sie modernste Wellness-Technologie und pure Entspannung in unserem exklusiven Spa- und Saunabereich.",
     url: 'https://www.rupertisauna.de',
     siteName: 'Rupertisauna',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Rupertisauna | Modern Luxury Spa & Sauna",
+    title: "Rupertisauna | Saunawelt & Wasserwelt in Laufen",
     description: "Erleben Sie modernste Wellness-Technologie und pure Entspannung.",
   },
   robots: {

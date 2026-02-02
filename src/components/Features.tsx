@@ -633,6 +633,28 @@ export default function Features() {
                     </div>
                 </div>
 
+                {/* Virtual Tour Section */}
+                <div className="mb-40 relative px-4 md:px-0">
+                    <div className="absolute inset-0 bg-deep-blue/10 blur-[100px] rounded-full pointer-events-none" />
+                    <div className="glass p-8 md:p-16 rounded-[40px] border-white/5 relative z-10 flex flex-col items-center">
+                        <h3 className="font-serif text-3xl md:text-5xl font-bold text-white mb-12 text-center">
+                            Virtueller <span className="text-accent-blue italic">Rundgang</span>
+                        </h3>
+                        <div className="w-full max-w-5xl overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+                            <iframe
+                                style={{ border: 0 }}
+                                src="https://www.google.com/maps/embed?pb=!4v1760363977143!6m8!1m7!1sCAoSHENJQUJJaEJxTkswc283T0tVYUN0dlZrb1U0emg.!2m2!1d47.93530655850747!2d12.92928952726997!3f25.88!4f-0.39000000000000057!5f0.7820865974627469"
+                                width="100%"
+                                height="600"
+                                allowFullScreen={true}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="w-full h-[400px] md:h-[600px]"
+                            />
+                        </div>
+                    </div>
+                </div>
+
                 {/* Standard Info Strips - 2 Columns */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-40">
                     {/* Opening Hours */}
